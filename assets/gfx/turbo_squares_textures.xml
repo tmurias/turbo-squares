@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texture version="1" file="turbo_squares_textures.png" type="bitmap" width="964" height="934" pixelformat="RGBA_4444" minfilter="linear" magfilter="linear" wrapt="clamp" wraps="clamp" premultiplyalpha="false">
+    <!-- Created with TexturePacker http://www.codeandweb.com/texturepacker -->
+    <!-- $TexturePacker:SmartUpdate:49e29bc5c7565f325794c5012b94de54:93233f1ae987fe501afaa0f39e64645e:8b33990429ae3f5b02ae841df57be162$ -->
+    <textureregion id="0" src="bad_square.png" x="888" y="544" width="60" height="60" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="60" srcheight="60"/>
+    <textureregion id="1" src="go_to_menu_button.png" x="409" y="826" width="330" height="76" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="330" srcheight="76"/>
+    <textureregion id="2" src="good_square.png" x="903" y="748" width="45" height="45" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="45" srcheight="45"/>
+    <textureregion id="3" src="high_scores_button.png" x="516" y="544" width="370" height="70" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="370" srcheight="70"/>
+    <textureregion id="4" src="how_to_play_button.png" x="409" y="682" width="370" height="70" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="370" srcheight="70"/>
+    <textureregion id="5" src="options_button.png" x="260" y="682" width="250" height="70" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="250" srcheight="70"/>
+    <textureregion id="6" src="quit_button.png" x="781" y="748" width="120" height="75" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="75"/>
+    <textureregion id="7" src="resume_button.png" x="332" y="676" width="224" height="75" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="224" srcheight="75"/>
+    <textureregion id="8" src="start_game_button.png" x="409" y="754" width="340" height="70" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="340" srcheight="70"/>
+    <textureregion id="9" src="thumb.png" x="2" y="676" width="256" height="256" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="256" srcheight="256"/>
+    <textureregion id="10" src="tiled_easy_button.png" x="488" y="616" width="448" height="64" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="448" srcheight="64"/>
+    <textureregion id="11" src="tiled_hard_button.png" x="2" y="610" width="484" height="64" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="484" srcheight="64"/>
+    <textureregion id="12" src="tiled_medium_button.png" x="2" y="544" width="512" height="64" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="512" srcheight="64"/>
+    <textureregion id="13" src="tiled_off_button.png" x="781" y="682" width="152" height="64" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="152" srcheight="64"/>
+    <textureregion id="14" src="tiled_on_button.png" x="751" y="825" width="120" height="64" rotated="false" trimmed="false" srcx="0" srcy="0" srcwidth="120" srcheight="64"/>
+    <textureregion id="15" src="turbo_squares_background.png" x="2" y="2" width="540" height="960" rotated="true" trimmed="false" srcx="0" srcy="0" srcwidth="540" srcheight="960"/>
+</texture>
