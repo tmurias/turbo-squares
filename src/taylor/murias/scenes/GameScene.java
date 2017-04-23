@@ -241,30 +241,30 @@ public class GameScene extends AbstractScene implements IOnMenuItemClickListener
 	
 	private void createUpdateHandler() {
 		registerUpdateHandler(new TimerHandler(0.1f, true, new ITimerCallback() {
-            @Override
-            public void onTimePassed(final TimerHandler pTimerHandler) {
-	            scoringUpdates++;
-	            productionUpdates++;
+			@Override
+			public void onTimePassed(final TimerHandler pTimerHandler) {
+				scoringUpdates++;
+				productionUpdates++;
 	            	
-	            if (scoringUpdates >= 10) {
-	            	scoringUpdates = 0;
-	            	incrementScore();
-	            }
+				if (scoringUpdates >= 10) {
+					scoringUpdates = 0;
+					incrementScore();
+				}
 	            	
-	            if (productionUpdates >= productionTime) {
-	            	productionUpdates = 0;
-	            	int len = badSquares.length;
-	            	for (int i = 0; i < len; i++) {
-	            		if (!badSquares[i].isVisible()) {
-	            			badSquares[i].setNewCoords();
-	            			badSquares[i].setOnScreen(true);
-	            			badSquares[i].setVisible(true);
-	            			badSquares[i].setIgnoreUpdate(false);
-	            			break;
-	            		}
-	            	}
-	            }
-            }
+				if (productionUpdates >= productionTime) {
+					productionUpdates = 0;
+					int len = badSquares.length;
+					for (int i = 0; i < len; i++) {
+						if (!badSquares[i].isVisible()) {
+							badSquares[i].setNewCoords();
+							badSquares[i].setOnScreen(true);
+							badSquares[i].setVisible(true);
+							badSquares[i].setIgnoreUpdate(false);
+							break;
+						}
+					}
+				}
+			}
 		}));
 	}
 	
