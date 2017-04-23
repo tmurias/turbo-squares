@@ -58,43 +58,43 @@ public class MainActivity extends BaseGameActivity {
 	private AdView adView;
 	
 	@Override
-    @SuppressLint("NewApi")
-    protected void onSetContentView() {
+	@SuppressLint("NewApi")
+	protected void onSetContentView() {
 
-			final FrameLayout frameLayout = new FrameLayout(this);
-        	final FrameLayout.LayoutParams frameLayoutLayoutParams = new FrameLayout.LayoutParams(
-                            FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT, Gravity.FILL);
-            final FrameLayout.LayoutParams adViewLayoutParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT,
-                            FrameLayout.LayoutParams.WRAP_CONTENT, Gravity.CENTER | Gravity.BOTTOM);
+		final FrameLayout frameLayout = new FrameLayout(this);
+		final FrameLayout.LayoutParams frameLayoutLayoutParams = new FrameLayout.LayoutParams(
+				FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT, Gravity.FILL);
+		final FrameLayout.LayoutParams adViewLayoutParams = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT,
+				FrameLayout.LayoutParams.WRAP_CONTENT, Gravity.CENTER | Gravity.BOTTOM);
 
-            adView = new AdView(this);
-            adView.setAdUnitId("ca-app-pub-9096503496243407/3282344376");
-            adView.setAdSize(AdSize.BANNER);
-            adView.setVisibility(AdView.VISIBLE);
-            adView.refreshDrawableState();
+		adView = new AdView(this);
+		adView.setAdUnitId("ca-app-pub-9096503496243407/3282344376");
+		adView.setAdSize(AdSize.BANNER);
+		adView.setVisibility(AdView.VISIBLE);
+		adView.refreshDrawableState();
 
-            AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
-            adView.loadAd(adRequest);
+		AdRequest adRequest = new AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build();
+		adView.loadAd(adRequest);
 
-            if (android.os.Build.VERSION.SDK_INT > android.os.Build.VERSION_CODES.GINGERBREAD_MR1) {
-                    adView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-            }
+		if (android.os.Build.VERSION.SDK_INT > android.os.Build.VERSION_CODES.GINGERBREAD_MR1) {
+ 			adView.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+		}
 
 
-            this.mRenderSurfaceView = new RenderSurfaceView(this);
-            mRenderSurfaceView.setRenderer(mEngine, this);
+		this.mRenderSurfaceView = new RenderSurfaceView(this);
+		mRenderSurfaceView.setRenderer(mEngine, this);
 
      
 
-            final FrameLayout.LayoutParams surfaceViewLayoutParams = new FrameLayout.LayoutParams(
-                            android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.MATCH_PARENT);
-            surfaceViewLayoutParams.gravity = Gravity.CENTER;
+		final FrameLayout.LayoutParams surfaceViewLayoutParams = new FrameLayout.LayoutParams(
+				android.view.ViewGroup.LayoutParams.MATCH_PARENT, android.view.ViewGroup.LayoutParams.MATCH_PARENT);
+		surfaceViewLayoutParams.gravity = Gravity.CENTER;
 
-            frameLayout.addView(this.mRenderSurfaceView, surfaceViewLayoutParams);
-            frameLayout.addView(adView, adViewLayoutParams);
-            this.setContentView(frameLayout, frameLayoutLayoutParams);
+		frameLayout.addView(this.mRenderSurfaceView, surfaceViewLayoutParams);
+		frameLayout.addView(adView, adViewLayoutParams);
+		this.setContentView(frameLayout, frameLayoutLayoutParams);
 
-    }
+	}
 	
 	@Override
 	public Engine onCreateEngine(EngineOptions pEngineOptions) {
